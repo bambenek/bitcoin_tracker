@@ -116,7 +116,7 @@ q.await(function(e,d){
       var usd = (newrec*rate).toFixed(2);
       var usd2 = (newspend*rate).toFixed(2);
       var usd3 = (newbal*rate).toFixed(2);
-      var str = ""+Name+" daily wallet summary report (Lifetime Numbers): \nRec: "+newrec+" BTC ~$"+addCommas(usd)+" USD, Spent: "+newspend+" BTC ~$"+addCommas(usd2)+", Bal: "+newbal+" BTC ~$"+addCommas(usd3)+".\n";
+      var str = ""+Name+" daily wallet summary report (Lifetime Numbers): \nRec: "+newrec+" BTC ~$"+addCommas(usd)+" USD\nSpent: "+newspend+" BTC ~$"+addCommas(usd2)+" USD\nBal: "+newbal+" BTC ~$"+addCommas(usd3)+" USD.\n";
       doTweet(str); 
         });
     });
